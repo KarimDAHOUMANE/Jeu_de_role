@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Warrior_Strike" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Warrior_Strike" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Warrior_Strike" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="C:/Program Files/CodeBlocks/SDL/include" />
+		</Compiler>
+		<Linker>
+			<Add library="mingw32" />
+			<Add library="SDL2main" />
+			<Add library="SDL2.dll" />
+			<Add library="user32" />
+			<Add library="gdi32" />
+			<Add library="winmm" />
+			<Add library="dxguid" />
+			<Add directory="C:/Program Files/CodeBlocks/SDL/lib" />
+		</Linker>
+		<ExtraCommands>
+			<Add after="XCOPY $(#sdl2)\bin\*.dll $(TARGET_OUTPUT_DIR) /D /Y" />
+		</ExtraCommands>
+		<Unit filename="Carte.cpp" />
+		<Unit filename="Carte.h" />
+		<Unit filename="Direction.cpp" />
+		<Unit filename="Direction.hpp" />
+		<Unit filename="Element.cpp" />
+		<Unit filename="Element.h" />
+		<Unit filename="Game.cpp" />
+		<Unit filename="Game.h" />
+		<Unit filename="Guerrier.cpp" />
+		<Unit filename="Guerrier.h" />
+		<Unit filename="InitError.h" />
+		<Unit filename="ObjetRamassable.cpp" />
+		<Unit filename="ObjetRamassable.h" />
+		<Unit filename="Obstacle.cpp" />
+		<Unit filename="Obstacle.h" />
+		<Unit filename="Position.cpp" />
+		<Unit filename="Position.h" />
+		<Unit filename="SDL.cpp" />
+		<Unit filename="SDL.h" />
+		<Unit filename="bloc.bmp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="map1.txt" />
+		<Unit filename="mario_bas.bmp" />
+		<Unit filename="mario_droite.bmp" />
+		<Unit filename="mario_gauche.bmp" />
+		<Unit filename="mario_haut.bmp" />
+		<Unit filename="objet_ramassable.bmp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
